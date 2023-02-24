@@ -10,7 +10,7 @@ https://www.microsoft.com/en-ie/download/details.aspx?id=40784
 # Build image:
 docker build -t oracle:ora193 . 
 
-# Run docker image
+# Run docker image:
 
 #interactive mode:
 
