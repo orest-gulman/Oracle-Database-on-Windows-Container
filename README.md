@@ -25,4 +25,4 @@ docker run -d -i -m 8G -p 1521:1521 oracle:ora193
 docker run -d -i -m 8G -p 1521:1521 oracle:ora193 powershell
 
 # Connect to DB:
-sqlplus sys/password@localhost:1521/ora193
+sqlplus sys/password@localhost:1521/ora193 as sysdba
