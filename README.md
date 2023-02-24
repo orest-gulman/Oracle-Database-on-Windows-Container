@@ -16,7 +16,10 @@ docker build -t oracle:ora193 .
 docker run -it --rm -m 8G -p 1521:1521 oracle:ora193
 
 #detached mode
-docker run -d -i --rm -m 8G -p 1521:1521 oracle:ora193
+docker run -d -i -m 8G -p 1521:1521 oracle:ora193
+
+#overwrite entrypoint
+docker run -d -i -m 8G -p 1521:1521 oracle:ora193 powershell
 
 # Connect to DB:
 sqlplus sys/password@localhost:1521/ora193
