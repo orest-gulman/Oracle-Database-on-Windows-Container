@@ -11,9 +11,9 @@ Build image:
 docker build -t oracle:ora193 . 
 
 Run docker image:
-# interactive mode
+interactive mode
 docker run -it --rm -m 8G -p 1521:1521 oracle:ora193
-# detached mode
+detached mode
 docker run -d -i --rm -m 8G -p 1521:1521 oracle:ora193
 
 Connect to DB:
